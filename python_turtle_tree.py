@@ -1,3 +1,5 @@
+import random
+
 def tree(length):
 	rand = (random.random() -0.5)*6
 	rand_angle = (random.random() -0.5)*15
@@ -12,3 +14,5 @@ def tree(length):
 		tree(real_length -5)
 		turn(30+rand_angle )
 	go(-real_length)
+
+tree(50)
